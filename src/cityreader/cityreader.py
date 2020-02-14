@@ -89,8 +89,8 @@ def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
     # Go through each city and check to see if it falls within
     # the specified coordinates.
     upper_lat = max([float(lat1), float(lat2)])
-    upper_lon = max([float(lon1), float(lon2)])
     lower_lat = min([float(lat1), float(lat2)])
+    upper_lon = max([float(lon1), float(lon2)])
     lower_lon = min([float(lon1), float(lon2)])
 
     for city in cities:
